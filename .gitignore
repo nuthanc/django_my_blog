@@ -1,0 +1,5 @@
+.vscode
+*.pyc
+blog_app/__pycache__
+my_blog/__pycache__
+db.sqlite3
