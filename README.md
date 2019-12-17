@@ -15,3 +15,4 @@
 * Pass posts from IndexListView to index.html 
 * On clicking post, load the post's details by giving href the app's url and the post's id
 * Update urls.py of app with the re_path of primary key and render PostDetailView
+* Create PostDetailView in views.py and give the model and the template
