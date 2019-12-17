@@ -9,8 +9,9 @@
 * Extend base.html in index.html
 * Create IndexListView in App's views.py
 * Update project urls.py file with IndexListView
+* Include app's urls.py file in the project's url
 * Create Post models in App's models.py
 * Register with admin.py and apply migrations
 * Pass posts from IndexListView to index.html 
-
-* Solved PostDetailView error
+* On clicking post, load the post's details by giving href the app's url and the post's id
+* Update urls.py of app with the re_path of primary key and render PostDetailView
