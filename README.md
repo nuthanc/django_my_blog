@@ -12,3 +12,5 @@
 * Create Post models in App's models.py
 * Register with admin.py and apply migrations
 * Pass posts from IndexListView to index.html 
+
+* Solved PostDetailView error
