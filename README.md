@@ -17,4 +17,4 @@
 * Update urls.py of app with the re_path of primary key and render PostDetailView
 * Create PostDetailView in views.py and give the model and the template
 
-* Next steps: Create Post and Update Post
+* Next steps: Need to create post form
