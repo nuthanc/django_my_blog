@@ -18,3 +18,14 @@
 * Create PostDetailView in views.py and give the model and the template
 
 * Next steps: Need to create post form
+* End of my implementation
+
+#### Instructor's implementation
+##### Basic App setup:
+* project called mysite and app called blog
+* Update app details in settings.py 
+* Create forms.py within application and then apply migrations
+* python manage.py runserver
+* After basic setup, proceed with either urls or models
+##### Models
+* Imports: timezone and reverse
