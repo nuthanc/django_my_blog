@@ -30,6 +30,8 @@
 ##### Models
 * Imports: timezone and reverse
 * Expecting only one single user with auth privileges: superuser
-* author made as ForeignKey
+* author made as ForeignKey and connected to superuser
 * For timezone settings, can go to settings.py 
 * Methods for model Post like publish and approve_comments
+* related_name where each Comment is connected to a Post
+* The foreign key is for linking Comment and Post
