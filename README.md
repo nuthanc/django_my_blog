@@ -29,3 +29,7 @@
 * After basic setup, proceed with either urls or models
 ##### Models
 * Imports: timezone and reverse
+* Expecting only one single user with auth privileges: superuser
+* author made as ForeignKey
+* For timezone settings, can go to settings.py 
+* Methods for model Post like publish and approve_comments
