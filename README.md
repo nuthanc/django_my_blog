@@ -35,3 +35,4 @@
 * Methods for model Post like publish and approve_comments
 * related_name where each Comment is connected to a Post
 * The foreign key is for linking Comment and Post
+* get_absolute_url in Post models is after creating Post, where should we go. Go to this absolute_url and render post_detail of the Post whose pk was just created

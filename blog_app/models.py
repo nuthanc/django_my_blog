@@ -20,6 +20,9 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse("post_detail", kwargs={'pk': self.pk})
+
 class Comment(models.Model):
     post = models.ForeignKey('blog_app.Post', related_name='comments')
     author = models.CharField(max_length=200)
@@ -33,3 +36,6 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+
+    def get_absolute_url(self):
+        return reverse("post_list", kwargs={'pk': self.pk})
