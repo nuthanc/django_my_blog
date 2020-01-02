@@ -20,13 +20,15 @@
 * Next steps: Need to create post form
 * End of my implementation
 
-#### Instructor's implementation
+### Instructor's implementation
+
 ##### Basic App setup:
 * project called mysite and app called blog
 * Update app details in settings.py 
 * Create forms.py within application and then apply migrations
 * python manage.py runserver
 * After basic setup, proceed with either urls or models
+
 ##### Models
 * Imports: timezone and reverse
 * Expecting only one single user with auth privileges: superuser
@@ -36,3 +38,14 @@
 * related_name where each Comment is connected to a Post
 * The foreign key is for linking Comment and Post
 * get_absolute_url in Post models is after creating Post, where should we go. Go to this absolute_url and render post_detail of the Post whose pk was just created
+
+##### Forms and Widgets to correspond to CSS classes
+* Add widgets attribute to a Meta class, like TextArea given medium.com styling
+* Widget attributes is actually a dictionary
+* Update forms.py with Post and Comment forms taking from their models
+* After that, for widgets let's say red border to text area box of PostForm:
+    * field as key and value is Widget name
+    * attrs is a sub-dictionary which has a class
+    * class of editable medium-editor-textarea postcontent means it is connected to 3 classes
+        * editable and medium-editor-textarea are not our classes
+
