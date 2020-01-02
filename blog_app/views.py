@@ -11,6 +11,7 @@ class IndexListView(ListView):
 class PostDetailView(DetailView):
     context_object_name = 'post_detail'
     model = models.Post
+    # Need to change the template_name because of change in settings.py file
     template_name = 'blog_app/post_detail.html'
 
 class PostCreateView(CreateView):

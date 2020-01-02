@@ -25,6 +25,7 @@
 ##### Basic App setup:
 * project called mysite and app called blog
 * Update app details in settings.py 
+* Another concept of LOGIN_REDIRECT_URL in settings.py which is for Redirection to home page after login
 * Create forms.py within application and then apply migrations
 * python manage.py runserver
 * After basic setup, proceed with either urls or models
@@ -48,4 +49,10 @@
     * attrs is a sub-dictionary which has a class
     * class of editable medium-editor-textarea postcontent means it is connected to 3 classes
         * editable and medium-editor-textarea are not our classes
+
+##### Static folder
+* It's better to have static folder within an app so that it can moved along with the Application if we want to move this App to another project
+* static folder created directly within blog_app
+* Add static folder in settings.py file
+
 
