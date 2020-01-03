@@ -56,3 +56,6 @@
 * Add static folder in settings.py file
 
 
+##### Views, Templates and Urls
+* First start with views and connect it to templates
+* A lot of CBV have default template name
