@@ -19,7 +19,6 @@ from blog_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.IndexListView.as_view(),name='index'),
+    path('', include('blog_app.urls')),
     path('post/new/',views.PostCreateView.as_view(), name='new'),
-    path('blog_app/', include('blog_app.urls', namespace='blog_app'))
 ]

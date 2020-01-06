@@ -1,13 +1,16 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
-from . import models
+from django.views.generic import (
+    ListView, DetailView, CreateView, TemplateView)
+from blog_app.models import Post, Comment
 
 # Create your views here.
-class IndexListView(ListView):
-    template_name = 'index.html'
-    model = models.Post
-    context_object_name = 'posts'
+class AboutView(TemplateView):
+    template_name = 'about.html'
+class PostListView(ListView):
+    model = Post
 
+    def get_queryset(self):
+        return Post.objects.filter(published_date__lte=timezone.now().order_by('-published_date'))
 class PostDetailView(DetailView):
     context_object_name = 'post_detail'
     model = models.Post

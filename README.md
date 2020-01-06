@@ -59,3 +59,28 @@
 ##### Views, Templates and Urls
 * First start with views and connect it to templates
 * A lot of CBV have default template name
+* TEMPLATE_DIR within settings.py file set as template within App
+    * Ex: TEMPLATE_DIR = os.path.join(BASE_DIR, "blog_app/templates/blog_app")
+* Template created is within App 
+* Under blog_app template, create base.html
+* In views.py start with About page
+    * Use TemplateView for this and create about.html
+* Use blog_app's urls.py for the about page
+* Instructor connects Project's urls with App's urls
+* In App's urls.py file
+    * Setup 'about' path and render AboutView as view
+* The homepage is gonna be a list of all the Posts
+    * So create PostListView in views.py file
+    * Import directly the models Post and Comment
+    * Custom list view shown in PostListView
+        * Django's ORM for custom touch
+        * Django docs link: https://docs.djangoproject.com/en/3.0/topics/db/queries/
+            * Search for __(underscore-underscore) and also Field Lookups
+        * get_queryset method is used
+            * It's like a SQL query
+            * Grab the published_dates that are <= Current time
+            * Then order them published date, where - is for descending order
+        * Most recent blogPost comes up first
+    * Add this view in urls.py of blog_app
+        
+
