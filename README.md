@@ -97,4 +97,6 @@
     * Add model and success_url
     * Need to use reverse_lazy so that it will get redirected when it is actually deleted
     * Update urls.py of blog_app
-
+* Next view is DraftListView
+    * get_queryset's filter published_date is null meaning it doesn't have publication date
+    * Add this to urls.py of blog_app
