@@ -92,5 +92,8 @@
     * In urls.py of blog_app, 
 * Next view is UpdateView
     * All the attributes are same as CreatePostView
-    * In blog_app's urls.py, 
+    * In blog_app's urls.py, add the re_path
+* Next view is DeleteView
+    * Add model and success_url
+    * Need to use reverse_lazy so that it will get redirected when it is actually deleted
 
