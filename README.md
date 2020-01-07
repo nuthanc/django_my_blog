@@ -90,5 +90,7 @@
     * Import mixins from django.contrib.auth.mixins
     * Import PostForm from App's forms
     * In urls.py of blog_app, 
-        
+* Next view is UpdateView
+    * All the attributes are same as CreatePostView
+    * In blog_app's urls.py, 
 

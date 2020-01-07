@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.views.generic import (
-    ListView, DetailView, CreateView, TemplateView)
+from django.views.generic import (ListView, DetailView,
+    CreateView, TemplateView, UpdateView)
 from blog_app.models import Post, Comment
 from blog_app.forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -19,6 +19,12 @@ class PostDetailView(DetailView):
     # Need to change the template_name because of change in settings.py file
 
 class CreatePostView(LoginRequiredMixin,CreateView):
+    login_url = '/login/'
+    redirect_field_name = 'blog_app/post_detail.html'
+    form_class = PostForm
+    model = Post
+
+class PostUpdateView(LoginRequiredMixin,UpdateView):
     login_url = '/login/'
     redirect_field_name = 'blog_app/post_detail.html'
     form_class = PostForm
