@@ -96,4 +96,5 @@
 * Next view is DeleteView
     * Add model and success_url
     * Need to use reverse_lazy so that it will get redirected when it is actually deleted
+    * Update urls.py of blog_app
 
