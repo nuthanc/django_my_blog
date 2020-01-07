@@ -82,5 +82,13 @@
             * Then order them published date, where - is for descending order
         * Most recent blogPost comes up first
     * Add this view in urls.py of blog_app
+* Next view is PostDetailView
+    * Only need to have model in this view
+    * And add url in blog_app's urls.py
+* Next view is CreatePostView
+    * For authentication, we use mixins for class based views as we use decorators for functions based views
+    * Import mixins from django.contrib.auth.mixins
+    * Import PostForm from App's forms
+    * In urls.py of blog_app, 
         
 
