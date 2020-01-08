@@ -100,3 +100,15 @@
 * Next view is DraftListView
     * get_queryset's filter published_date is null meaning it doesn't have publication date
     * Add this to urls.py of blog_app
+* Templates for the views:
+    * post_detail.html which is the default template for DetailView with Post model
+    * post_form.html which is the default template for CreateView
+    * post_list.html which is the default template for ListView
+    * post_confirm_delete.html for DeleteView
+    * post_draft_list for ListView
+    * comment_form for comment's CreateView
+* add_comment_to_post function in views.py
+    * Need to import get_object_or_404, redirect, login_required, timezone
+    * Take pk that links comment to the post
+    * get_object_or_404: Gets the Post object 
+    * request.method == 'POST': means form is filled
