@@ -112,3 +112,6 @@
     * Take pk that links comment to the post
     * get_object_or_404: Gets the Post object 
     * request.method == 'POST': means form is filled
+    * Update urls.py of blog_app
+* comment_approved function in views.py
+    * 
