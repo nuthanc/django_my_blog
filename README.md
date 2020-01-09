@@ -114,4 +114,13 @@
     * request.method == 'POST': means form is filled
     * Update urls.py of blog_app
 * comment_approved function in views.py
-    * 
+    * Call approve function after getting the comment object
+    * return redirect to post pk and this post attribute is present in Comment model as foreign key
+    * Update urls.py of blog_app
+* comment_remove function in views.py
+    * Get post_pk because pk won't be available after comment is deleted
+    * Update urls.py of blog_app
+* post_publish function in views.py
+    * publish the Post
+    * Redirect to post_detail
+    * Update urls.py of blog_app
