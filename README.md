@@ -124,3 +124,14 @@
     * publish the Post
     * Redirect to post_detail
     * Update urls.py of blog_app
+
+##### Authentication system on top of superuser group
+* Anyone who wants to create a Post needs to be a superuser
+* In urls.py of project my_blog
+    * Import views from auth
+    * Add paths to login and logout
+    * When you logout, the next page is home page, so supply them as kwargs
+* Under login of registration template
+    * content is used instead of body
+    * hidden input has basically has to do with the view we are operating with
+        * IN urls.py of project, views.login will provide with the next value
