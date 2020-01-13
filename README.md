@@ -135,3 +135,22 @@
     * content is used instead of body
     * hidden input has basically has to do with the view we are operating with
         * IN urls.py of project, views.login will provide with the next value
+* base.html of blog_app templates
+    * Add load staticfiles so that way we can reference blog_app css files
+    * Get Bootstrap 3.3.7
+    * Get Medium style editor: https://github.com/yabwe/medium-editor
+    * Demo link: https://github.com/yabwe/medium-editor/blob/master/demo/textarea.html
+        * After you link everthing, i.e, the js and the css
+        * Create a script, which is a editor object 
+        * Also, make sure we have editable medium-editor-textarea class
+    * Make sure custom css goes after all other css
+        * Check out codepen for hue loaders, where you will get code of HTML and CSS
+        * Copy CSS to blog.css
+        * Get rid of b1,b2 and b3 classes
+        * Change background to color in loader class
+        * Remove positions in loader class
+    * Get google fonts 
+    * Setup navbar in body
+        * Custom bigbrand class for Brand
+        * user.is_authenticated comes from auth library Django
+
