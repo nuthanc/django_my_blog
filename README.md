@@ -154,3 +154,4 @@
         * Custom bigbrand class for Brand
         * user.is_authenticated comes from auth library Django
 * Fill out other templates in blog_app
+    * 
