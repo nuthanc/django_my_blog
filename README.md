@@ -154,4 +154,9 @@
         * Custom bigbrand class for Brand
         * user.is_authenticated comes from auth library Django
 * Fill out other templates in blog_app
-    * 
+    * post_detail.html
+        * safe filter is for when medium highlight bold makes
+            * <b>Hi there<b>
+            * The ending tag is made safe
+        * linebreaksbr filter if when line breaks are there, HTML will also have line breaks
+        * Using span for icons
