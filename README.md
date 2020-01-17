@@ -160,3 +160,10 @@
             * The ending tag is made safe
         * linebreaksbr filter if when line breaks are there, HTML will also have line breaks
         * Using span for icons
+    * post_form.html
+        * Custom class of post-form if we want to do anything in the future
+        * form doesn't need an action as Django takes care of it
+        * form.as_p has classes in the widgets 
+        * save is custom class
+        * Injecting script from Medium github
+        * .editable class is attached as a widget in the form PostForm
