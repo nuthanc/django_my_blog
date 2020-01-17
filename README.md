@@ -169,3 +169,5 @@
         * .editable class is attached as a widget in the form PostForm
     * post_confirm_delete
         * object is given by Delete_View
+    * comment_form.html
+        * To have same capabilities as Medium editor, add the script
