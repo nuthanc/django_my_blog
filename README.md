@@ -167,3 +167,5 @@
         * save is custom class
         * Injecting script from Medium github
         * .editable class is attached as a widget in the form PostForm
+    * post_confirm_delete
+        * object is given by Delete_View
