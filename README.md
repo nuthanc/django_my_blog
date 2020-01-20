@@ -171,3 +171,7 @@
         * object is given by Delete_View
     * comment_form.html
         * To have same capabilities as Medium editor, add the script
+
+#### Error corrections
+* In urls.py of blog_app, remove extra spaces in regular expressions
+* In urls.py of my_blog, replace login and logout with their corresponding Views
