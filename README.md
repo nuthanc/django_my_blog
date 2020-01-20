@@ -175,3 +175,4 @@
 #### Error corrections
 * In urls.py of blog_app, remove extra spaces in regular expressions
 * In urls.py of my_blog, replace login and logout with their corresponding Views
+* Deleted db and made migrations
