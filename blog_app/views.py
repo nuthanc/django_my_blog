@@ -11,6 +11,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 class AboutView(TemplateView):
     template_name = 'about.html'
+    
 class PostListView(ListView):
     model = Post
 

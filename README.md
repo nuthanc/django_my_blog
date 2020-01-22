@@ -176,3 +176,12 @@
 * In urls.py of blog_app, remove extra spaces in regular expressions
 * In urls.py of my_blog, replace login and logout with their corresponding Views
 * Deleted db and made migrations
+
+#### Final touches
+* Create superuser using python manage.py createsuperuser 
+* Migrate 
+* python manage.py runserver
+* As we enter browser, we see this error
+    * Error during template rendering
+    * In template /Users/nuthanc/personal_projects/djangoProj/my_blog/blog_app/templates/blog_app/post_list.html, error at line 5
+    
