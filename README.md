@@ -185,4 +185,5 @@
     * Error during template rendering
     * In template /Users/nuthanc/personal_projects/djangoProj/my_blog/blog_app/templates/blog_app/post_list.html, error at line 5
 * Solved reverse not found for view error by adding app_name: in url
+* Also needed to add in reverse method the app_name:view_name 
 
