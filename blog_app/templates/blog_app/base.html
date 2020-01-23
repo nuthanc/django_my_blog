@@ -40,10 +40,10 @@
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
                     <li>
-                        <a href="{% url 'post_new' %}">New Post</a>
+                        <a href="{% url 'blog_app:post_new' %}">New Post</a>
                     </li>
                     <li>
-                        <a href="{% url 'post_draft_list' %}">Drafts</a>
+                        <a href="{% url 'blog_app:post_draft_list' %}">Drafts</a>
                     </li>
                     <li>
                         <a href="{% url 'logout' %}">Log Out</a>
