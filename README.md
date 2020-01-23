@@ -185,5 +185,4 @@
     * Error during template rendering
     * In template /Users/nuthanc/personal_projects/djangoProj/my_blog/blog_app/templates/blog_app/post_list.html, error at line 5
 * Solved reverse not found for view error by adding app_name: in url
-* Lookup for admin error: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication
 
