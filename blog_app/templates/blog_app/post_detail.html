@@ -12,17 +12,17 @@
     <p class="postcontent">{{ post.title|safe|linebreaksbr }}</p>
 
     {% if user.is_authenticated %}
-        <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk %}">
+        <a class="btn btn-primary" href="{% url 'blog_app:post_update' pk=post.pk %}">
             <span class="glyphicon glyphicon-pencil"></span>
         </a>
-        <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk %}">
+        <a class="btn btn-primary" href="{% url 'blog_app:post_remove' pk=post.pk %}">
             <span class="glyphicon glyphicon-remove"></span>
         </a>
     {% endif %}
         
     <hr>
 
-    <a class="btn btn-primary btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}">
+    <a class="btn btn-primary btn-comment" href="{% url 'blog_app:add_comment_to_post' pk=post.pk %}">
         Add Comment
     </a>
 
@@ -33,10 +33,10 @@
             {% if user.is_authenticated or comment.approved_comment %}
                 {{ comment.created_date }}
                 {% if not comment.approved_comment %}
-                    <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk %}">
+                    <a class="btn btn-default" href="{% url 'blog_app:comment_remove' pk=comment.pk %}">
                         <span class="glyphicon glyphicon-pencil"></span>
                     </a>
-                    <a class="btn btn-primary" href="{% url 'comment_approve' pk=comment.pk %}">
+                    <a class="btn btn-primary" href="{% url 'blog_app:comment_approve' pk=comment.pk %}">
                         <span class="glyphicon glyphicon-ok"></span>
                     </a>
                 {% endif %}
