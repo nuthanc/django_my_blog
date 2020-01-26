@@ -9,7 +9,7 @@
     {% else %}
         <a class="btn btn-default" href="{% url 'blog_app:post_publish' pk=post.pk %}">Publish</a>
     {% endif %}
-    <p class="postcontent">{{ post.title|safe|linebreaksbr }}</p>
+    <p class="postcontent">{{ post.text|safe|linebreaksbr }}</p>
 
     {% if user.is_authenticated %}
         <a class="btn btn-primary" href="{% url 'blog_app:post_update' pk=post.pk %}">
